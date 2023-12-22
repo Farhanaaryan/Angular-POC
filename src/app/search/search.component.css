@@ -1,0 +1,24 @@
+.search-bar{
+    border: 1px solid black;
+    align-items: center;
+    height: 30px;
+    width: 400px;   
+}
+
+.search{
+    margin: 20px 40px 20px 440px;
+}
+
+.search-btn{
+    border: 1px solid black;
+    align-items: center;
+    height: 34px;
+    width: 60px; 
+    background-color: black;
+    color: white;
+}
+
+/* .search-btn-abled{
+    background-color: green;
+    color: black;
+} */
