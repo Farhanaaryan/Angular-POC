@@ -1,0 +1,44 @@
+<div *ngIf="loading; else content">
+    <div class="input-box"> <div class="input-bar"></div><button class="input-btn"></button></div>
+    <div class="filter-box"></div>
+    <div class="shimmer-div" *ngFor="let i of arr">
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+    </div>
+</div>
+
+<ng-template #content>
+    <app-search (searchChange)="onSearchChange($event)"></app-search>
+
+    <app-filter [all]="noOfProducts" [instock]="noOfProductsInStock" [outofstock]="noOfProductsOutOfStock"
+        (filterButtonChanged)="onFilterChanged($event)">
+    </app-filter>
+
+    <div class="products-lst">
+        <div *ngFor="let product of filteredProducts">
+            <div class="product"
+                *ngIf="filterButton==='all' || product.productAvailable.toString() === filterButton || product.productAvailable.toString() === filterButton">
+                <div>
+                    <img [src]="product.productImage" alt="{{ product.productName }}" width="100" height="100">
+                </div>
+                <div>
+                    <h3>{{ product.productName }}</h3>
+                    <p>{{ product.productDescription }}</p>
+                    <p>Price: {{ product.productPrice }}</p>
+                    <p>Quantity: {{ product.productQuantity }}</p>
+                    <div class="product-avail"
+                        [ngStyle]="{fontWeight:'bold' , color: (product.productStock != 0 )?'Green':'Red'}">
+                        {{product.productStock != 0 ? 'Available' : 'Not Available'}}</div>
+                    <div class="buy-btn">
+                        <button type="button" routerLink="/cart" [disabled]="product.productStock === 0"
+                            [ngClass]="{ 'enabled': product.productStock !== 0, 'disabled': product.productStock === 0 }">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ng-template>

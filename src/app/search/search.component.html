@@ -1,2 +1,7 @@
-<input type="text" name="text" class="search" placeholder="Search here!">
-<input type="submit" name="submit" class="submit" value="Search">
+<div class="search">
+    <!-- [(ngModel)]="searchTxt" (input)="OnSearchTxtChange($event)"  -->
+    <input class="search-bar" type="text" placeholder="Search..."#searchInput  [(ngModel)]="searchTerm">
+    <!-- <button [ngClass]="({'search-btn': true, 'search-btn-abled': searchTxt })">Search</button> -->
+    <button class="search-btn" (click)=" updateSearch(searchInput)" (click)="onSearchClick()">Search</button>
+    <p *ngIf="searchTxt != '' ">Search results for: {{searchTxt}}</p>
+</div>

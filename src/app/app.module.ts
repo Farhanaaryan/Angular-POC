@@ -11,6 +11,11 @@ import { SearchComponent } from './search/search.component';
 import { FilterComponent } from './filter/filter.component';
 import { LoginComponent } from './login/login.component';
 
+import { ObservableComponent } from './observable/observable.component';
+import { ProductComponent } from './product/product.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,9 @@ import { LoginComponent } from './login/login.component';
     CartComponent,
     SearchComponent,
     FilterComponent,
-    LoginComponent
+    LoginComponent,
+    ObservableComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
