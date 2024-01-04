@@ -21,6 +21,7 @@ export class FilterComponent {
 
   onFilterButtonChanged(){
     this.filterButtonChanged.emit(this.filterButton)
+    console.log(this.filterButton);
   }
 
 }

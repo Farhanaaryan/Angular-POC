@@ -13,6 +13,9 @@ import { LoginComponent } from './login/login.component';
 
 import { ObservableComponent } from './observable/observable.component';
 import { ProductComponent } from './product/product.component';
+import { ContactComponent } from './contact/contact.component';
+import { PipesComponent } from './pipes/pipes.component';
+
 
 
 
@@ -27,6 +30,9 @@ import { ProductComponent } from './product/product.component';
     LoginComponent,
     ObservableComponent,
     ProductComponent,
+    ContactComponent,
+    PipesComponent,
+
   ],
   imports: [
     BrowserModule,

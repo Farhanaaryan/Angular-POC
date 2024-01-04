@@ -54,7 +54,7 @@ export class ProductComponent {
           productImage: "./assets/images/Chilli Powder.webp",
           productName: "Chilli Powder",
           productPrice: "130/Kg",
-          productDescription: "Spice up your life with the fiery kick of our premium Chilli Powder!.",
+          productDescription: "Spice up your life with Chilli Powder!.",
           productAvailable: true,
           productQuantity: 10,
           productStock: 100
@@ -74,7 +74,7 @@ export class ProductComponent {
           productImage: "/assets/images/Garam Masala.webp",
           productName: "Garam Masala",
           productPrice: "124/Kg",
-          productDescription: "Ignite your taste buds with the aromatic allure of our Garam Masala ",
+          productDescription: "Ignite your taste buds with allure of our Garam Masala ",
           productAvailable: false,
           productQuantity: 100,
           productStock: 0
@@ -82,9 +82,9 @@ export class ProductComponent {
       {
           productId: "7",
           productImage: "/assets/images/handmade jewellery.jpg",
-          productName: "Handmade Jewellery",
+          productName: " Jewellery",
           productPrice: "200/piece",
-          productDescription: "Handcrafted with love, worn with pride.",
+          productDescription: "Handcrafted by love,",
           productAvailable: true,
           productQuantity: 100,
           productStock: 100
