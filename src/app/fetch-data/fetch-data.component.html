@@ -1,0 +1,11 @@
+<button type="button" (click)="fetchData('posts')">Posts</button>
+<button type="button" (click)="fetchData('comments')" >Comments</button>
+<button type="button" (click)="fetchData('albums')">Albums</button>
+<button type="button" (click)="fetchData('photos')">Photos</button>
+<button type="button" (click)="fetchData('users')" >Users</button>
+<button type="button" (click)="fetchData('todos')" >Todos</button>
+  
+  <div *ngIf="data">
+    <h2>{{ selectedResource | titlecase }} Data:</h2>
+    <pre>{{ data | json }}</pre>
+  </div>

@@ -10,6 +10,7 @@ export class LoginComponent {
   // Other properties and methods...
 
   OnLoginClicked() {
+    alert("Better luck next time");
     // Handle the login logic here
     console.log('Login button clicked!');
   }

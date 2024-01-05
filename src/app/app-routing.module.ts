@@ -7,6 +7,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HooksComponent } from './lifeCycleHooks/hooks/hooks.component';
 import { ContainerComponent } from './lifeCycleHooks/container/container.component';
+import { ObservableComponent } from './Observable/observable/observable.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'pipes', component:PipesComponent},
   {path: 'cart', component:CartComponent},
-  {path: 'hooks',component:ContainerComponent}
+  {path: 'hooks',component:ContainerComponent},
+  {path: 'observables',component:ObservableComponent},
+  {path: 'data',component:FetchDataComponent}
 
 ];
 

@@ -7,8 +7,8 @@ import { ActivatedRoute,Router,} from '@angular/router';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  activeRoute: ActivatedRoute = inject(ActivatedRoute);
-  router: Router = inject(Router);
+  // activeRoute: ActivatedRoute = inject(ActivatedRoute);
+  // router: Router = inject(Router);
   products = [
     {
         productId: "1",
@@ -31,6 +31,9 @@ export class CartComponent implements OnInit {
     
   }
 
-  constructor() { }
+  constructor(
+    activeRoute: ActivatedRoute ,
+    router: Router 
+  ) { }
 
 }

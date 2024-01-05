@@ -84,7 +84,7 @@ export class ProductComponent {
           productImage: "/assets/images/handmade jewellery.jpg",
           productName: " Jewellery",
           productPrice: "200/piece",
-          productDescription: "Handcrafted by love,",
+          productDescription: "Handcrafted by love,Pearl and Jewellery",
           productAvailable: true,
           productQuantity: 100,
           productStock: 100

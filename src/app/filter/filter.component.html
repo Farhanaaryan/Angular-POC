@@ -1,9 +1,9 @@
 <div class="filter-txt">
-    <span>Filter:</span>
+    <span>   Filter:   </span>
     <input type="radio" name="filter" value="all" [(ngModel)]="filterButton" (change)="onFilterButtonChanged()"/>
-    <span>{{'All (' +all+ ')'}}</span>
+    <span>{{'All ('  + all + ')'}}</span>
     <input type="radio" name="filter" value=true [(ngModel)]="filterButton" (change)="onFilterButtonChanged()"/>
-    <span>{{'In Stock (' +instock+ ')'}}</span>
+    <span>{{'In Stock (' + instock + ')'}}</span>
     <input type="radio" name="filter" value=false [(ngModel)]="filterButton" (change)="onFilterButtonChanged()"/>
-    <span>{{'Out of Stock (' +outofstock+ ')'}}</span>
+    <span>{{'Out of Stock (' + outofstock + ')'}}</span>
 </div>

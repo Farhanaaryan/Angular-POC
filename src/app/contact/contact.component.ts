@@ -14,12 +14,13 @@ export class ContactComponent implements OnInit {
   isSubmitted: boolean = false;
 
   OnSubmit(){
-    this.isSubmitted = true;
+    // this.isSubmitted = true;
  
-      this.firstName = '';
-      this.lastName = '';
-      this.country = '';
-      this.message = '';
+    //   this.firstName = '';
+    //   this.lastName = '';
+    //   this.country = '';
+    //   this.message = '';
+    alert("Thank you for your response ");
     }
   
 
