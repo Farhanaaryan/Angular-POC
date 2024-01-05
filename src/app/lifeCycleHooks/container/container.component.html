@@ -1,0 +1,9 @@
+<div class="container">
+    <input type="text" #inputEl>
+    <button (click)="onBtnClick(inputEl)">Submit</button>
+    <app-hooks [message]="inputVal" *ngIf="(!isDestroy)">
+        <p>User has written: {{inputVal}}</p>
+    </app-hooks>
+    <br><br>
+    <button (click)="destroyComponent()">Show / Hide</button>
+</div>

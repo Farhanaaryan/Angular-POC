@@ -15,6 +15,9 @@ import { ObservableComponent } from './observable/observable.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { CustomPipePipe } from './services/custom-pipe.pipe';
+import { ContainerComponent } from './lifeCycleHooks/container/container.component';
+import { HooksComponent } from './lifeCycleHooks/hooks/hooks.component';
 
 
 
@@ -32,6 +35,9 @@ import { PipesComponent } from './pipes/pipes.component';
     ProductComponent,
     ContactComponent,
     PipesComponent,
+    CustomPipePipe,
+    ContainerComponent,
+    HooksComponent,
 
   ],
   imports: [

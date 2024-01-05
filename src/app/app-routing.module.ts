@@ -5,6 +5,8 @@ import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { HooksComponent } from './lifeCycleHooks/hooks/hooks.component';
+import { ContainerComponent } from './lifeCycleHooks/container/container.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path:'contact' , component:ContactComponent},
   {path: 'login', component:LoginComponent},
   {path: 'pipes', component:PipesComponent},
-  {path: 'cart', component:CartComponent}
+  {path: 'cart', component:CartComponent},
+  {path: 'hooks',component:ContainerComponent}
+
 ];
 
 
