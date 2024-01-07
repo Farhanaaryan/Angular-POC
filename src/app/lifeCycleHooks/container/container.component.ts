@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewChecked,AfterViewInit } from '@angular/core';
+import { Component, AfterViewChecked, AfterViewInit} from '@angular/core';
 
 @Component({
   selector: 'app-container',

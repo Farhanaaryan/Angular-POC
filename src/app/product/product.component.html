@@ -35,6 +35,12 @@
                             [ngClass]="{ 'enabled': product.productStock !== 0, 'disabled': product.productStock === 0 }">
                             Buy Now
                         </button>
+                        <div class="addtocart">
+                        <button type="button" routerLink="/cart" [disabled]="product.productStock === 0"
+                        [ngClass]="{'enabled': product.productStock ! ==0, 'disabled': product.productStock ===0 }">
+                         Add to cart
+                        </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@
     width: 40%;
     margin: 100px auto; 
 }
-/* Full-width input fields */
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -18,7 +18,7 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-  button {
+   button {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -33,4 +33,5 @@ input[type=text], input[type=password] {
   .cancel-button-div{
     text-align: right;
     width: 100%;
-  }
+  } 
+  

@@ -1,4 +1,4 @@
-<div class="checkout-container">
+<!-- <div class="checkout-container">
   <div class="left-side">
       <div class="payment-info">
           <h3 class="payment-heading">Payment Information</h3>
@@ -84,7 +84,7 @@
             </button>
           </form>
         </div>
-  </div>
+  </div> -->
 
   <div class="right-side">
     <div class="receipt" *ngFor="let product of products">
@@ -114,6 +114,9 @@
         </table>
       </div>
     </div>
+    <div class="button">
+      <button onclick="onBuyNowClick()" routerLink="/payment">Buy Now</button>
+    </div>
 
   </div>
-</div>
+

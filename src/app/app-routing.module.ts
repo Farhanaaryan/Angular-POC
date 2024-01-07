@@ -9,17 +9,22 @@ import { HooksComponent } from './lifeCycleHooks/hooks/hooks.component';
 import { ContainerComponent } from './lifeCycleHooks/container/container.component';
 import { ObservableComponent } from './Observable/observable/observable.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { PaymentComponent } from './payment/payment.component';
+
+
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path:'home' , component:ProductComponent},
   {path:'contact' , component:ContactComponent},
-  {path: 'login', component:LoginComponent},
+  {path: 'login',component:LoginComponent},
   {path: 'pipes', component:PipesComponent},
-  {path: 'cart', component:CartComponent},
+  {path: 'cart', component: CartComponent},
   {path: 'hooks',component:ContainerComponent},
   {path: 'observables',component:ObservableComponent},
-  {path: 'data',component:FetchDataComponent}
+  {path: 'data',component:FetchDataComponent},
+  {path: 'payment',component:PaymentComponent}
+
 
 ];
 

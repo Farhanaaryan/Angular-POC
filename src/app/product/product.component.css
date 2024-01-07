@@ -1,53 +1,66 @@
-img{
+img {
   height: 150px;
   width: 246px;
 }
 
-.product-detail{
-  margin-top:10px
+.product-detail {
+  margin-top: 10px;
 }
 
-
-.product{
+.product {
   border: 2px solid black;
   height: 363px;
   width: 250px;
   margin: 35px;
 }
 
-.products-lst{
+.products-lst {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 40px 40px 200px;
 }
 
-.product-avail{
-  margin-bottom: 0;
+.product-avail {
+  margin-bottom: 14px;
 }
 
-.buy-btn{
+.buy-btn,
+.addtocart-btn {
   text-align: center;
+  display: flex; /* Make buttons display as flex containers */
+  gap: 47px; 
+  /* Add some space between buttons */
 }
 
-.buy-btn button {
+.buy-btn button,
+.addtocart-btn button {
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 13px 2px;
+  font-size: 14px;
+
+  margin: 0px -15px;
   cursor: pointer;
 }
 
-.buy-btn button.enabled {
-  background-color: #04AA6D;
+.addtocart-btn button{
+  background-color: #04aa6d;
 }
 
-.buy-btn button.disabled {
+.buy-btn button.enabled,
+.addtocart-btn button.enabled {
+  background-color:  #04aa6d;
+}
+
+
+.buy-btn button.disabled,
+.addtocart-btn button.disabled {
   background-color: grey;
 }
+
 
 .shimmer {
   height: 350px;
@@ -79,43 +92,6 @@ img{
   z-index: 1;
   animation: shimmer 1.5s infinite linear;
 }
-
-@keyframes shimmer{
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-
-/* .input-box{ 
-  margin: 20px 40px 20px 440px;
-  display: flex;
-}
-
-.input-bar{
-  border: 1px solid black;
-  align-items: center;
-  height: 30px;
-  width: 400px;
-}
-
-.input-btn{
-  border: 1px solid black;
-  align-items: center;
-  height: 32px;
-  width: 60px; 
-  background-color: black;
-}
-
-.filter-box{
-  background-color: lightgray;
-  height: 30px;
-  width: 400px;
-  margin: 30px 20px 10px 220px
-} */
 
 .input-box {
   margin: 20px 40px 20px 440px;

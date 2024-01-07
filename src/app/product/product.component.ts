@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
+    
 
   arr: number[] = [1,2,3,4,5,6,7,8,9,10,11,12] 
 
@@ -17,6 +18,8 @@ export class ProductComponent {
       // this.updateProductCounts();
     }, 1000);
   }
+
+
 
   products = [
       {
@@ -140,6 +143,7 @@ export class ProductComponent {
           productStock: 100
       }
   ]
+  
   // noOfProducts = this.products.length
   // noOfProductsInStock = this.products.filter(p => p.productStock != 0).length
   // noOfProductsOutOfStock = this.products.filter(p => p.productStock == 0).length
@@ -166,6 +170,8 @@ export class ProductComponent {
   onFilterChanged(event: string) {
       this.filterButton = event
   }
+
+  
 
   // private updateProductCounts() {
   //     this.noOfProducts = this.filteredProducts.length;

@@ -9,6 +9,29 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.button {
+  text-align: center;
+}
+
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+  color: white;/* Border color, same as background-color for a solid look */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+  /* Add any other styles you want for the button */
+}
+
+
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  /* Add any other styles you want for the button */
+}
 em {
   font-style: normal;
   font-weight: 700;

@@ -23,6 +23,9 @@ import { Button1Component } from './Observable/button1/button1.component';
 import { Button2Component } from './Observable/button2/button2.component';
 import { ObservableComponent } from './Observable/observable/observable.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { PaymentComponent } from './payment/payment.component';
+
+
 
 
 
@@ -47,6 +50,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     Button2Component,
     ObservableComponent,
     FetchDataComponent,
+    PaymentComponent,
+
 
   ],
   imports: [
