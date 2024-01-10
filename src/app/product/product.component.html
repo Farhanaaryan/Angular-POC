@@ -37,7 +37,7 @@
                         </button>
                         <div class="addtocart-btn">
                         <button type="button" routerLink="/cart" [disabled]="product.productStock === 0"
-                        [ngClass]="{'enabled': product.productStock ! ==0, 'disabled': product.productStock ===0 }">
+                        [ngClass]="{'enabled': product.productStock ! ==0, 'disabled': product.productStock ===0 }" (click)="addtoCart(product.productId)">
                          Add to cart
                         </button>
                         </div>

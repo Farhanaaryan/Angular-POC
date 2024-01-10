@@ -132,4 +132,8 @@ export class ProductListService {
     getProducts(){
         return this.products
     }
+
+    /* Down Delete*/
+  data: string[] = []; //cart value
+  /*Delete*/
 }

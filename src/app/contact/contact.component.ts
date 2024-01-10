@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,39 +7,63 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  firstName: string = '';
-  lastName: string = '';
-  country: string = 'india';
-  message: string = '';
-
-  isSubmitted: boolean = false;
-
-  OnSubmit(){
-    // this.isSubmitted = true;
- 
-    //   this.firstName = '';
-    //   this.lastName = '';
-    //   this.country = '';
-    //   this.message = '';
-    alert("Thank you for your response ");
-    }
-  
-
- 
-  canExit(){
-    // console.log('canExit called!')
-    if((this.firstName || this.lastName || this.message) && !this.isSubmitted){
-      return confirm('You have unsaved changes. Do you want to navigate away?')
-    }
-    else{
-      return true;
-    }
-  }
-
-  constructor() { }
-
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  title = 'AngularForms';
+  defaultCountry = 'india';
+
+  firstname!: string;
+  lastname!: string;
+  email!: string;
+  gen!: string;
+  country!: string;
+
+  defaultGender = 'Male';
+
+  gender = [
+    {id: '1', value: 'Male'},
+    {id: '2', value: 'Female'},
+    {id: '3', value: 'Other'}
+  ]
+  
+  @ViewChild('myForm')
+  form!: NgForm;
+
+  onSubmit(){
+    console.log(this.form);
+
+    this.firstname = this.form.value.personDetails.firstname;
+    this.lastname = this.form.value.personDetails.lastname;
+    this.email = this.form.value.personDetails.email;
+    this.gen = this.form.value.gender;
+    this.country = this.form.value.country;
+
+    this.form.reset();
   }
 
+  setDefaultValues(){
+    // this.form.value.personDetails.firstname = 'John';
+    // this.form.value.personDetails.lastname = 'smith';
+    // this.form.value.personDetails.email = 'abc@example.com';
+    // this.form.setValue({
+    //   country: '',
+    //   gender: '',
+    //   hobbies: '',
+    //   personDetails: {
+    //     firstname: 'John',
+    //     lastname: 'Smith',
+    //     email: 'abc@example.com'
+    //   }
+    // })
+
+    this.form.form.patchValue({
+      personDetails: {
+         firstname: 'John',
+         lastname: 'Smith',
+         email: 'abc@example.com'
+      }
+    })
+  }
 }
 

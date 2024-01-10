@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductListService } from '../services/product-service';
 
 @Component({
   selector: 'app-product',
@@ -154,6 +155,8 @@ export class ProductComponent {
 
   // setProductStocked()
 
+  constructor(private cart: ProductListService) {}
+
   filteredProducts = this.products;
   onSearchChange(searchTerm: string) {
     this.filteredProducts = this.products.filter(product =>
@@ -171,8 +174,20 @@ export class ProductComponent {
       this.filterButton = event
   }
 
-  
+  /* Down Delete*/
 
+//     addtoCart(vadr: string) {
+//     this.cart.data.push(vadr);
+//   }
+
+addtoCart(product: any) {
+    this.cart.data.push(product);
+  }
+  cartProducts() {
+    
+  }
+
+  /*up Delete*/
   // private updateProductCounts() {
   //     this.noOfProducts = this.filteredProducts.length;
   //     this.noOfProductsInStock = this.filteredProducts.filter(p => p.productStock !== 0).length;

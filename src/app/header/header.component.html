@@ -6,6 +6,7 @@
       <a routerLink="data" routerLinkActive="active">Data</a>
       <a routerLink="contact" routerLinkActive="active">Contact</a>
       <a routerLink="hooks" routerLinkActive="active">Hooks</a>
+      <a routerLink="feedback" routerLinkActive="active">Feedback</a>
     
     </div>
     <div class="right-nav">
@@ -14,6 +15,8 @@
 
 
       <a routerLink="login" routerLinkActive="active">Login</a>
+      <a routerLink="login" [queryParams]="{logout: true}">Logout</a> 
+      <a>{{ displayName.getUsername()}}</a>
     </div>
   </div>
 
