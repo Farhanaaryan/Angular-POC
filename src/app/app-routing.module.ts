@@ -7,11 +7,11 @@ import { ProductComponent } from './product/product.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HooksComponent } from './lifeCycleHooks/hooks/hooks.component';
 import { ContainerComponent } from './lifeCycleHooks/container/container.component';
-import { ObservableComponent } from './Observable/observable/observable.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { AsynchrounousObservablesComponent } from './asynchrounous-observables/asynchrounous-observables.component';
 
 
 
@@ -23,10 +23,10 @@ const routes: Routes = [
   {path: 'cart', component: CartComponent},
   {path: 'contact' ,component:ContactComponent},
   {path: 'hooks',component:ContainerComponent},
-  {path: 'observables',component:ObservableComponent},
   {path: 'data',component:FetchDataComponent},
   {path: 'payment',component:PaymentComponent},
-  {path: 'feedback',component:FeedbackComponent}
+  {path: 'feedback',component:FeedbackComponent},
+  {path: 'observable',component:AsynchrounousObservablesComponent}
 
 
 ];

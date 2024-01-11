@@ -18,14 +18,13 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipePipe } from './services/custom-pipe.pipe';
 import { ContainerComponent } from './lifeCycleHooks/container/container.component';
 import { HooksComponent } from './lifeCycleHooks/hooks/hooks.component';
-import { Button1Component } from './Observable/button1/button1.component';
-import { Button2Component } from './Observable/button2/button2.component';
-import { ObservableComponent } from './Observable/observable/observable.component';
+
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { PaymentComponent } from './payment/payment.component';
 import { DisplaynameService } from './services/displayname.service';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { AsynchrounousObservablesComponent } from './asynchrounous-observables/asynchrounous-observables.component';
 
 
 
@@ -48,13 +47,12 @@ import { FeedbackComponent } from './feedback/feedback.component';
     CustomPipePipe,
     ContainerComponent,
     HooksComponent,
-    Button1Component,
-    Button2Component,
-    ObservableComponent,
+
     FetchDataComponent,
     PaymentComponent,
     ContactComponent,
     FeedbackComponent,
+    AsynchrounousObservablesComponent,
 
 
   ],

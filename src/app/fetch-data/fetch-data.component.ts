@@ -12,7 +12,6 @@ export class FetchDataComponent {
 
   constructor(private dataService: FetchDataService) { }
 
-  //fetching data form the fetch-data service
   fetchData(resource: string) {
     this.selectedResource = resource;
     this.dataService.getData(resource).subscribe(
@@ -29,6 +28,50 @@ export class FetchDataComponent {
         console.log("Request completed");
       }
     );
-    
-    }
   }
+
+  // Create data
+  createData() {
+    const newData = { /* your data here */ };
+    this.dataService.createData(newData, 'your-resource').subscribe(
+      response => {
+        console.log('Created successfully:', response);
+        // Refresh the data after creating
+        this.fetchData('your-resource');
+      },
+      error => {
+        console.error('Error creating data:', error);
+      }
+    );
+  }
+
+  // Update data
+  updateData(id: number) {
+    const updatedData = { /* your updated data here */ };
+    this.dataService.updateData(id, updatedData, 'your-resource').subscribe(
+      response => {
+        console.log('Updated successfully:', response);
+        // Refresh the data after updating
+        this.fetchData('your-resource');
+      },
+      error => {
+        console.error('Error updating data:', error);
+      }
+    );
+  }
+
+  // Delete data
+  deleteData(id: number) {
+    this.dataService.deleteData(id, 'your-resource').subscribe(
+      response => {
+        console.log('Deleted successfully:', response);
+        // Refresh the data after deleting
+        this.fetchData('your-resource');
+      },
+      error => {
+        console.error('Error deleting data:', error);
+      }
+    );
+  }
+}
+

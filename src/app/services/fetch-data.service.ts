@@ -153,6 +153,30 @@ export class FetchDataService {
         catchError(this.handleError)
       );
   }
+  
+  // Create data (POST)
+  createData(data: any, resource: string): Observable<any> {
+    const url = `${this.apiUrl}/${resource}`;
+    return this.http.post(url, data).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  // Update data (PUT)
+  updateData(id: number, updatedData: any, resource: string): Observable<any> {
+    const url = `${this.apiUrl}/${resource}/${id}`;
+    return this.http.put(url, updatedData).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  // Delete data (DELETE)
+  deleteData(id: number, resource: string): Observable<any> {
+    const url = `${this.apiUrl}/${resource}/${id}`;
+    return this.http.delete(url).pipe(
+      catchError(this.handleError)
+    );
+  }
 
   private handleError(error: HttpErrorResponse): Observable<never> {
     console.error('An error occurred:', error);
