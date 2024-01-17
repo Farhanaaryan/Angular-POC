@@ -12,6 +12,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { AsynchrounousObservablesComponent } from './asynchrounous-observables/asynchrounous-observables.component';
+import { HTTPComponent } from './http/http.component';
 
 
 
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'data',component:FetchDataComponent},
   {path: 'payment',component:PaymentComponent},
   {path: 'feedback',component:FeedbackComponent},
+  {path: 'http',component:HTTPComponent},
   {path: 'observable',component:AsynchrounousObservablesComponent}
 
 

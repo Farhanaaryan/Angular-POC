@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 import { ProductComponent } from './product/product.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipePipe } from './services/custom-pipe.pipe';
@@ -25,6 +26,7 @@ import { DisplaynameService } from './services/displayname.service';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { AsynchrounousObservablesComponent } from './asynchrounous-observables/asynchrounous-observables.component';
+import { HTTPComponent } from './http/http.component';
 
 
 
@@ -53,6 +55,7 @@ import { AsynchrounousObservablesComponent } from './asynchrounous-observables/a
     ContactComponent,
     FeedbackComponent,
     AsynchrounousObservablesComponent,
+    HTTPComponent,
 
 
   ],

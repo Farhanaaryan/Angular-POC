@@ -12,6 +12,7 @@ export class DisplaynameService {
     this.sessionName = this.displayname
   }
 
+  
   getUsername(): string | null {
     return this.displayname;
   }
